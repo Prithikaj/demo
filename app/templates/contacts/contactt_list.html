@@ -1,0 +1,6 @@
+<br><br><body bgcolor="silver"><center>{% for contact in contacts %}
+  <p>{{ contact.name }} - {{ contact.phone }}</p>
+  <a href="{% url 'contactt_edit' pk=contact.pk %}">Update</a>
+  <a href="{% url 'contactt_delete' pk=contact.pk %}">Delete</a>
+{% endfor %}</center>
+</body>

@@ -1,0 +1,9 @@
+<br><br><center><body bg bgcolor="aqua">
+<form method="post" class="contactt-form" action="{% url 'contactt_create' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+
+<a href="{% url 'contactt_list' %}">Back to Contact List</a>
+</body></center>
